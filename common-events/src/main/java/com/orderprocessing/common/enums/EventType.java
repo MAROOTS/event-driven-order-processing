@@ -1,0 +1,18 @@
+package com.orderprocessing.common.enums;
+
+public enum EventType {
+    ORDER_PLACED,
+    ORDER_CONFIRMED,
+    ORDER_CANCELLED,
+    ORDER_FAILED,
+
+    INVENTORY_RESERVED,
+    INVENTORY_RELEASED,
+    INVENTORY_FAILED,
+
+    PAYMENT_INITIATED,
+    PAYMENT_SUCCESS,
+    PAYMENT_FAILED,
+
+    NOTIFICATION_SENT
+}
