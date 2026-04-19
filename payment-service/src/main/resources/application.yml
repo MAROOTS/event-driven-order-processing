@@ -1,11 +1,11 @@
 server:
-  port: 8082
+  port: 8083
 
 spring:
   application:
-    name: inventory-service
+    name: payment-service
   datasource:
-    url: jdbc:postgresql://localhost:5433/orders_db?currentSchema=inventory
+    url: jdbc:postgresql://localhost:5433/orders_db?currentSchema=payment
     username: admin
     password: secret
     driver-class-name: org.postgresql.Driver
@@ -14,7 +14,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        default_schema: inventory
+        default_schema: payment
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
   kafka:
@@ -23,7 +23,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
-      group-id: inventory-group
+      group-id: payment-group
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
