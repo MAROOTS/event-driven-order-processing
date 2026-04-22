@@ -14,6 +14,7 @@
   <modules>
     <module>common-events</module>
     <module>eureka-server</module>
+    <module>api-gateway</module>
     <module>order-service</module>
     <module>inventory-service</module>
     <module>payment-service</module>
