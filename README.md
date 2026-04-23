@@ -1,1 +1,1 @@
-An event-driven microservices system for order processing using Spring Boot and Apache Kafka. It consists of 6 services — an API Gateway, Eureka service discovery, and 4 domain services for orders, inventory, payments and notifications
+An event-driven microservices system for order processing using Spring Boot and Apache Kafka. It consists of 6 services an API Gateway, Eureka service discovery, and 4 domain services for orders, inventory, payments and notifications
